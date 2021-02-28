@@ -1,0 +1,40 @@
+﻿@using Black_Panther_Knives.Models;
+
+@{
+    Model2 db = new Model2();
+
+
+    int sr = 0;
+    ViewBag.Title = "View";
+
+}
+<center>
+    <h2>Contact US Report</h2>
+</center>
+
+    
+
+<br />
+<table border="1" class="table table-responsive table-hover">
+    <tr style="background-color:#ff6666; color:white">
+        <th>sr #</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        
+    </tr>
+    @foreach (var c in db.Contacts)
+    {
+        sr++;
+
+<tr>
+    <td>@sr</td>
+    <td>@c.Contact_Name</td>
+    <td>@c.Contact_Email</td>
+    <td colspan="2">@c.Contact_Message</td>
+    
+
+    
+</tr>
+    }
+</table>

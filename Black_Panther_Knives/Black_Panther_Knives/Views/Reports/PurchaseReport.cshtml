@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Black_Panther_Knives.Models.Order>
+
+@{
+    int sr = 0;
+    ViewBag.Title = "View";
+
+
+}
+<center>
+   
+    <h2>Sale Report</h2>
+</center>
+@using (Html.BeginForm("PurchaseReport", "Reports", FormMethod.Post))
+{
+    <table width="100%" border="1">
+        <tr>
+
+            <td>Date From:</td>
+            <td><input name="Date_From" type="datetime-local" value=@ViewBag.DateFrom class="form-control" /></td>
+
+            <td>Date To:</td>
+
+            <td><input name="Date_To" type="datetime-local" value=@ViewBag.DateTo class="form-control" /></td>
+
+
+        </tr>
+        <tr>
+            <td>category:</td>
+            <td> @Html.DropDownList("Category", ViewBag.Category as SelectList, "Salect category", htmlAttributes: new { @class = "form-control" })</td>
+            <td>Product:</td>
+            <td> @Html.DropDownList("Product", ViewBag.Product as SelectList, "Salect Poduct", htmlAttributes: new { @class = "form-control" })</td>
+
+        </tr>
+
+        <tr>
+            <td style="padding-top:10px" colspan="4"><button class="btn  btn-block" style="background-color:#ff6666; color:white">Generate Report</button></td>
+        </tr>
+    </table>
+}
+<br />
+<table border="1" class="table table-responsive table-hover">
+    <tr style="background-color:#ff6666; color:white">
+        <th>Sr #</th>
+        <th>Order ID</th>
+        <th>Order Date</th>
+        <th>Order Type</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Order Email</th>
+        <th>Order Contact</th>
+        <th>Order Address</th>
+        <th>View Detail</th>
+    </tr>
+    @foreach (var o in Model)
+    {
+        sr++;
+
+        <tr>
+            <td>@sr</td>
+            <td>Order-@o.order_id</td>
+            <td>@DateTime.Parse(o.Order_Date.ToString()).ToLongDateString()</td>
+            <td>@o.order_type</td>
+            <td>@o.Order_First_Name</td>
+            <td>@o.Order_Last_name</td>
+            <td>@o.Order_Email</td>
+            <td>@o.Order_Phone</td>
+            <td>@o.order_Street_Address</td>
+
+            <td><a href="@Url.Action("Invoice", "Reports", new { id = o.order_id })" class="btn btn-primary"> View Invoice</a></td>
+        </tr>
+    }
+</table>

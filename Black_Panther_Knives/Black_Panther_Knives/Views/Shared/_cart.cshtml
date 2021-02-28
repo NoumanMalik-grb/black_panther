@@ -1,0 +1,106 @@
+﻿@using Black_Panther_Knives.Models;
+@{
+    Model2 db = new Model2();
+ 
+    int rowno = -1;
+    decimal totalamount = 0;
+}
+
+
+<!--Page Title-->
+
+    <section class="page-title" style="background-image:url(../../content/customer/images/background/11.jpg)">
+        <div class="auto-container">
+            <h2>CART</h2>
+            <ul class="page-breadcrumb">
+                <li><a href="index-2.html">home</a></li>
+                <li>Cart</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+    <!-- Cart Section -->
+
+    <section class="cart-section">
+        <div class="auto-container">
+
+            <!--Cart Outer-->
+            <div class="cart-outer">
+                <div class="table-outer">
+                    <table class="cart-table">
+                        <thead class="cart-header">
+                            <tr>
+                                <th class="prod-column">Product</th>
+                                <th class="price">Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in (List<Product>)Session["myCart"])
+                            {
+                                rowno++;
+                                <tr>
+                                    <td class="prod-column">
+                                        <div class="column-box">
+                                            <figure class="prod-thumb"><a href="#"><img src="@Url.Content(item.Product_PIc)" alt=""></a></figure>
+                                            <h6 class="prod-title">@item.Product_Name</h6>
+                                        </div>
+                                    </td>
+                                    <td class="price ">@item.Product_Sale_Price</td>
+                                    <td>
+                                        @Ajax.ActionLink(" ", "minusfromcart", "cart", new { id = rowno }, new AjaxOptions
+                                                                       {
+                                                                           UpdateTargetId = "upd",
+                                                                           InsertionMode = InsertionMode.Replace,
+                                                                       }, new { @class = "btn btn-primary fa fa-minus plusminus" })
+                                        <span style="font-size:30px">@item.Quantity</span>
+                                        @Ajax.ActionLink(" ", "PlustoCart", "cart", new { id = rowno }, new AjaxOptions
+                                        {
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "upd",
+                                   },
+                                             new { @class = "btn btn-primary fa fa-plus plusminus", value = "" })
+
+                                        @*<a class="btn btn-primary fa fa-plus" href="" style="background-color:black; border-color:white"></a>&nbsp; &nbsp;<span style="font-size:30px">@item.Quantity</span>&nbsp; &nbsp;<a class="btn btn-primary fa fa-plus" style="background-color:black; border-color:white"></a>*@
+                                    </td>
+                                    <td class="sub-total">@(item.Product_Sale_Price * item.Quantity)</td>
+                                    <td class="remove"><a href="@Url.Action("RemoveFromCart","Cart",new { id=rowno})" class="remove-btn"><span class="flaticon-multiply"></span></a></td>
+                                    @{
+                                        totalamount += item.Product_Sale_Price * item.Quantity;
+                                    }
+                                </tr>
+                            }
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="coupon-outer clearfix">
+
+
+                    <div class="pull-right">
+                        <a href="/home/shop" class="theme-btn btn-style-one cart-btn"><span class="txt">Update Cart</span></a>
+                    </div>
+
+                </div>
+
+                <!--Cart Total Box-->
+                <div class="cart-total-box">
+                    <h4>Cart Totals</h4>
+                    <!--Totals Table-->
+                    <ul class="totals-table">
+                        <li class="clearfix"><span class="col col-title">Subtotal</span><span class="col">$@totalamount</span></li>
+                        <li class="clearfix"><span class="col col-title">Tax</span><span class="col">$50</span></li>
+                        <li class="total clearfix"><span class="col col-title">Total .</span><span class="col">$@(totalamount + 50)</span></li>
+                    </ul>
+                </div>
+                <div class="text-left"><a href="/cart/checkout" class="theme-btn btn-style-one checkout-btn"><span class="txt">Proceed to Checkout</span></a></div>
+            </div>
+
+        </div>
+    </section>

@@ -1,0 +1,232 @@
+﻿@using Black_Panther_Knives.Models;
+@{
+    Model2 db = new Model2();
+
+    int id = (int)TempData["pid"];
+    var singlepro = db.Products.Where(x => x.Product_id == id).ToList();
+    var singleone = db.Products.Where(x => x.Product_id == id).FirstOrDefault();
+}
+
+<div id="upd">
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(../../content/customer/images/background/11.jpg)">
+        <div class="auto-container">
+            <h2>OUR STORE</h2>
+            <ul class="page-breadcrumb">
+                <li><a href="index-2.html">home</a></li>
+                <li>Shop</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+    <!-- Shop Single Section -->
+    <section class="shop-single-section">
+        <div class="auto-container">
+
+            <!--Shop Single-->
+            @foreach (var item in db.Products.Where(x => x.Product_id == id))
+            {
+                <div class="shop-page product-details">
+
+                    <!--Basic Details-->
+
+                    <div class="basic-details">
+                        <div class="row clearfix">
+
+
+
+                            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="carousel-outer">
+
+                                    <ul class="image-carousel owl-carousel owl-theme">
+                                        <li><a href="@Url.Content(item.Product_PIc)" class="lightbox-image"><img style="width:100%;height:400px" src="@Url.Content(item.Product_PIc)" alt=""></a></li>
+                                        <li><a href="@Url.Content(item.Product_pic2)" class="lightbox-image"><img style="width:100%;height:400px" src="@Url.Content(item.Product_pic2)" alt=""></a></li>
+                                        <li><a href="@Url.Content(item.Product_pic3)" class="lightbox-image"><img style="width:100%;height:400px" src="@Url.Content(item.Product_pic3)" alt=""></a></li>
+                                        <li><a href="@Url.Content(item.Product_pic4)" class="lightbox-image"><img style="width:100%;height:400px" src="@Url.Content(item.Product_pic4)" alt=""></a></li>
+                                        <li><a href="@Url.Content(item.Product_pic5)" class="lightbox-image"><img style="width:100%;height:400px" src="@Url.Content(item.Product_pic5)" alt=""></a></li>
+                                    </ul>
+
+                                    <ul class="thumbs-carousel owl-carousel owl-theme">
+
+                                        <li><img style="width:200px;height:200px" src="@Url.Content(item.Product_pic2)" alt=""></li>
+                                        <li><img style="width:200px;height:200px" src="@Url.Content(item.Product_pic3)" alt=""></li>
+                                        <li><img style="width:200px;height:200px" src="@Url.Content(item.Product_pic4)" alt=""></li>
+                                        <li><img style="width:200px;height:200px" src="@Url.Content(item.Product_pic5)" alt=""></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                         
+                            <!--Info Column-->
+                            <div class="info-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="details-header">
+                                    <h5>@item.Product_Name</h5>
+                                    <div class="text">@item.product_discription</div>
+                                    <div class="item-price">@item.Product_Sale_Price</div>
+                                </div>
+
+                                <div class="other-options">
+                                    <div class="clearfix">
+                                        <div class="pull-left">
+
+                                        </div>
+                                        <div class="pull-left">
+                                            <!--Btns Box-->
+                                            <div class="btns-box">
+                                                <a href="@Url.Action("Addtocart", "cart", new { id = item.Product_id })" class="theme-btn btn-style-one"><span class="txt">ADD TO CARD &ensp;<i class="flaticon-shopping-cart-3"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <ul class="shop-list">
+
+                                    <li><strong>Categories:</strong>@singleone.Sub_Category.Category.Category_Name</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Basic Details -->
+                </div>
+            }
+                <center>
+                    <div class="btns-box">
+
+                        <a id="btnClick1" class="theme-btn btn-style-one"><span class="txt">Detail</span></a>
+
+                        <a id="btnClick" class="theme-btn btn-style-one"><span class="txt">Review</span></a>
+
+
+                    </div>
+                </center>
+
+
+                <div id="1" style="border:2px solid">
+                    <div class="text">@singleone.Main_Discription</div>
+                    @if (singleone.Youtube_Link != null)
+                    {
+                        <div class="container">
+
+                            <iframe style="width:100%" height="315" src="https://www.youtube.com/embed/@singleone.Youtube_Link" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    }
+                </div>
+                <div id="2" style=" display:none;border:2px solid">
+
+                    @foreach (var item in db.Reviews.Where(x => x.Product_Fid == singleone.Product_id))
+                    {
+
+
+                        <div class="container">
+                            <img src="~/Content/Customer/user.png" class="img-circle" width="50" height="50" />
+                            <span>
+                                @item.Customer_Name (@item.Customer_Email)
+                                <br />
+
+                                <i class="fa fa-star" style="color:yellow"></i>
+                            </span>
+                            <div>
+                                <p style="color:white;font-size:12px">@item.Review_msg</p>
+
+                            </div>
+
+                        </div>
+                    }
+
+                    <h4 style="text-align:center">Your Rating</h4>
+                    <form action="/Home/Product_Detail" method="post">
+                        <div class="wrapper">
+                            <input type="radio" id="r1" name="Reviews_Star" value="5">
+                            <label for="r1" class="fa fa-star" style="font-size:25px"></label>
+                            <input type="radio" id="r2" name="Reviews_Star" value="4">
+                            <label for="r2" class="fa fa-star" style="font-size:25px"></label>
+                            <input type="radio" id="r3" name="Reviews_Star" value="3">
+                            <label for="r3" class="fa fa-star" style="font-size:25px"></label>
+                            <input type="radio" id="r4" name="Reviews_Star" value="2">
+                            <label for="r4" class="fa fa-star" style="font-size:25px"></label>
+                            <input type="radio" id="r5" name="Reviews_Star" value="1">
+                            <label for="r5" class="fa fa-star" style="font-size:25px"></label>
+
+                        </div>
+                        <input type="text" name="Product_Fid" style="visibility:hidden" value="@singleone.Product_id" />
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Customer_Name" placeholder="Your Name" style="background-color:lightgray;margin-left:10px; width:90%" />
+
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="Customer_Email" placeholder="Your Email" style="background-color:lightgray;margin-left:10px; width:90%" />
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Review" name="Review_msg" class="form-control" style="background-color:lightgray;margin-left:10px; width:90%" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="theme-btn btn-style-one" style="background-color:lightgray;color:black;" />
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <!-- Related Products -->
+                <div class="related-products">
+                    <h5>RELATED PRODUCTS</h5>
+                    <div class="row clearfix">
+
+                        <!-- Shop Item -->
+                        @foreach (var item in db.Products.Where(x => x.Sub_Category.Category.category_id == singleone.Sub_Category.Category.category_id))
+                        {
+                            <div class="shop-item col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <a class="overlay-link" href="shop-single.html"></a>
+                                        <img src="@Url.Content(item.Product_PIc)" alt="" />
+                                        <div class="overlay-box">
+                                            <ul class="cart-option">
+                                                <li><a href="shop-single.html"><span><img src="images/icons/right-arrow.svg" alt="" /></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h3><a href="shop-single.html">@item.Product_Name</a></h3>
+                                        <div class="clearfix">
+                                            <div class="pull-left">
+                                                <div class="price">@item.Product_Sale_Price</div>
+                                            </div>
+                                            <div class="pull-right">
+                                                <!-- Rating -->
+                                                <a href="shop-single.html" class="cart"><span class="icon flaticon-shopping-cart-3"></span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- End Shop Single Section -->
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        $('#btnClick').on('click', function () {
+
+            $('#2').show();
+            $('#1').hide();
+        });
+        $('#btnClick1').on('click', function () {
+            $('#1').show();
+            $('#2').hide();
+
+        });
+    </script>
+</div>

@@ -1,0 +1,64 @@
+﻿@model Black_Panther_Knives.Models.Account
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Account</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Account_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Acount_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Acount_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Acount_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Acount_Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Acount_Pic)
+        </dt>
+
+        <dd>
+           <img src="@Url.Content(Model.Acount_Pic)" width="100" height="100" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

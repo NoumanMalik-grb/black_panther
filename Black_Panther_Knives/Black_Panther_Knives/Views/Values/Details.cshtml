@@ -1,0 +1,50 @@
+﻿@model Black_Panther_Knives.Models.Value
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Value</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Happy_Clients)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Happy_Clients)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Awards)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Awards)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Years_Experience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Years_Experience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fourth_Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fourth_Amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,86 @@
+﻿
+@using Black_Panther_Knives.Models;
+@{
+    Model2 db = new Model2();
+    
+   
+    decimal totalamount = 0;
+    if (Session["id"] == null)
+    {
+        Response.Redirect("/home/shop");
+    }
+    int id = (int)Session["id"];
+}
+
+
+
+<!--Page Title-->
+<div id="upd">
+
+    <!--End Page Title-->
+    <!-- Cart Section -->
+    <center>
+        <h1>Your Purchased IS Saved</h1>
+    </center>
+    <table class="table table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            @foreach (var item in db.Order_Detail.Where(x => x.Order_fid == id))
+            {
+
+                <tr>
+                    <td>
+                        <img src="@Url.Content(item.Product.Product_PIc)" width="100" height="100" />
+                    </td>
+                    <td>
+
+                        @item.Product.Product_Purchase_price
+                    </td>
+                    <td>
+
+                        <span style="font-size:30px">@item.ORDER_QUANTITY</span>
+
+
+                    </td>
+                    <td>
+
+                        @(totalamount += item.Product.Product_Purchase_price * item.ORDER_QUANTITY)
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+
+            }
+
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>@totalamount</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="/purchase/shop" class="btn btn-primary btn-block">Add More Purchase</a></td>
+            </tr>
+
+        </tbody>
+      
+    </table>
+
+
+</div>             

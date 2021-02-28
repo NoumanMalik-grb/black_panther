@@ -1,0 +1,59 @@
+﻿@using Black_Panther_Knives.Models
+
+@{
+    ViewBag.Title = "Index";
+    Model2 db = new Model2();
+}
+<center>
+    <h2>Add Stock</h2>
+
+</center>
+<table class="table">
+    <tr>
+        <th>
+            Category Name
+        </th>
+        <th>
+            Sub Category Name
+        </th>
+        <th>
+            Product Name
+        </th>
+        <th>
+            Product Pic
+        </th>
+        <th>
+            Purchase Price
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+
+    @foreach (var item in db.Products)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Category.Category.Category_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sub_Category.Sub_category_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product_Name)
+            </td>
+            <td>
+                <img src="@Url.Content(item.Product_PIc)" width="100" height="100" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product_Purchase_price)
+            </td>
+
+
+            <td>
+                <a href="@Url.Action("addtocart","Purchase",new { id=item.Product_id})" class="btn btn-primary">Add Stock</a>
+            </td>
+        </tr>
+    }
+
+</table>

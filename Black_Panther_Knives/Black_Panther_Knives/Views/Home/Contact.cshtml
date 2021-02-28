@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-title" style="background-image:url(../../Content/image/IMG-20210225-WA0159.jpg)">
+    <div class="auto-container">
+        <h2>Contact Us</h2>
+        <ul class="page-breadcrumb">
+            <li><a href="@Url.Action("index","Home")">home</a></li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</section>
+<br />
+<br />
+<br />
+<!--End Page Title-->
+<div class="container-fluid"> 
+    <center>
+        <h4 style="color:blue;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-emphasis-style:filled">Contact</h4>
+        @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+        {
+            <div class="form-group">
+                <input type="text" name="Contact_Name" value="" class="form-control col-4" />
+            </div> <br />
+            <div class="form-group">
+                <input type="email" name="Contact_Email" value="" class="form-control col-4" />
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="text" name="Contact_Message" value="" class="form-control col-4" /><br />
+            </div>
+            <div class="form-group">
+           <input type="submit" value="submit" class="btn thumbnail" style="color:springgreen; background-color:blueviolet; border: 2px solid double; font-size:larger" />
+            </div>
+        } 
+        
+    </center>
+</div>

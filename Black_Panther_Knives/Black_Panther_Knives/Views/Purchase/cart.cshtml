@@ -1,0 +1,109 @@
+﻿@using Black_Panther_Knives.Models;
+@{
+    Model2 db = new Model2();
+  
+    int rowno = -1;
+    decimal totalamount = 0;
+}
+    
+       
+        <!--Page Title-->
+        <div id="upd">
+            
+            <!--End Page Title-->
+            <!-- Cart Section -->
+
+          
+                            <table class="table table-responsive table-bordered" >
+                                <thead >
+                                    <tr>
+                                        <th>Product</th>
+                                        <th >Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                        <th>Remove</th>
+                                    </tr>
+                                </thead>
+                                @if (Session["Purchasecart"]!= null)
+                                {
+                            <tbody>
+                                @foreach (var item in (List<Product>)Session["Purchasecart"])
+                                {
+                                    rowno++;
+                                    <tr>
+                                        <td>
+                                            <img src="@Url.Content(item.Product_PIc)" width="100" height="100" />
+                                        </td>
+                                        <td>
+
+                                            @item.Product_Purchase_price
+                                        </td>
+                                        <td>
+                                            @Ajax.ActionLink(" ", "minusfromcart", "purchase", new { id = rowno }, new AjaxOptions
+                                      {
+                                          UpdateTargetId = "upd",
+                                          InsertionMode = InsertionMode.Replace,
+                                      }, new { @class = "btn btn-primary fa fa-minus plusminus" })
+                                            <span style="font-size:30px">@item.Quantity</span>
+                                            @Ajax.ActionLink(" ", "PlustoCart", "purchase", new { id = rowno }, new AjaxOptions
+                                       {
+                                           InsertionMode = InsertionMode.Replace,
+                                           UpdateTargetId = "upd",
+                                       },
+      new { @class = "btn btn-primary fa fa-plus plusminus" })
+
+                                        </td>
+                                        <td>
+
+                                            @(totalamount+= item.Product_Purchase_price * item.Quantity)
+                                        </td>
+                                        <td>
+                                            @Ajax.ActionLink(" ", "removefromcart", "purchase", new { id = rowno }, new AjaxOptions
+                                      {
+                                          InsertionMode = InsertionMode.Replace,
+                                          UpdateTargetId = "upd",
+                                      },
+     new { @class = "fa fa-remove" })
+
+                                        </td>
+                                    </tr>
+                                  
+
+                                }
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/purchase/shop" class="btn btn-primary btn-block">Update cart</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>@totalamount</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="/purchase/complete_order" class="btn btn-primary btn-block">Purchase</a></td>
+                                </tr>
+
+                            </tbody>
+                                            }
+                                            else
+                                            {
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" colspan="5">Please Update Your Cart</td>
+                                                    </tr>
+                                                </tbody>
+                                            }
+                            </table>
+                       
+           
+        </div>             

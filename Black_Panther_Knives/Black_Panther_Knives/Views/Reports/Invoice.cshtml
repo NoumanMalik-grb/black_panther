@@ -1,0 +1,198 @@
+﻿
+@using Black_Panther_Knives.Models;
+<style>
+    .center{
+        text-align: center;
+    }
+</style>
+@{
+    decimal? total = 0;
+    Model2 db = new Model2();
+    ViewBag.Title = "View";
+    int id = (int)TempData["ID"];
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Invoice</title>
+
+   
+</head>
+
+<body>
+    <div id="printArea">
+        <center>
+            <div style="margin-top:50px">
+                <table width="100%">
+                    <tr style="background-color:black; color:white">
+                        <td align="center"><h2>Invoice</h2></td>
+                    </tr>
+                </table>
+
+                @foreach (var o in db.Orders.Where(x => x.order_id== id).ToList())
+                {
+                    <table width="100%" class="table table-responsive table-hover" cellpadding="0" cellspacing="0">
+                        <tr>
+
+
+                            <td rowspan="2">
+                                <img src="~/content/customer/img/tranparent_Full_logo.png" style="width:70%;height:200px;  max-width:300px;">
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>
+                                    Invoice #: @o.order_id
+                                </h5>
+                                <h5>
+                                    Date : @Convert.ToDateTime(o.Order_Date).ToLongDateString().ToString();
+                                </h5>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table  border="0" width="100%" class="table table-responsive table-hover" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td >
+                                Customer:
+                            </td>
+                            <td  width="25%" >
+                                @o.Order_First_Name &nbsp; @o.Order_Last_name
+                            </td>
+                            <td>
+                                Status:
+                            </td>
+                            <td class="center">
+                                @o.Order_Status
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                Phone:
+                            </td>
+                            <td  width="25%">
+                                @o.Order_Phone
+                            </td>
+                            <td>
+                                Type:
+
+                            </td>
+                            <td class="center">
+                                @o.order_type
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                Email:
+
+                            </td>
+                            <td  width="25%">
+
+                                @o.Order_Email
+                            </td>
+                            <td>
+                                Address:
+                            </td>
+                            <td class="center">
+                                @o.order_Street_Address
+                            </td>
+                        </tr>
+                    </table>
+
+                }
+
+                <table width="100%" border="0" class="table table-responsive table-hover" cellpadding="0" cellspacing="0">
+                    <tr style="background-color:black; color:white" class="heading">
+                        <td>
+                            Name
+                        </td>
+                        <td class="center">
+                            Price
+                        </td>
+                        <td class="center">
+                            Quantity
+
+                        </td>
+                        <td class="center">
+                            Amount
+                        </td>
+                    </tr>
+                    @foreach (var op in db.Order_Detail.Where(x => x.Order_fid == id).ToList())
+                    {
+                        <tr class="item">
+                            <td>
+                                @op.Product.Product_Name
+                            </td>
+                            <td class="center">
+                                @{
+                                    if (op.Order.order_type == "Sale")
+                                    {
+                                        @op.Od_Sale_Price
+                                    }
+                                    else
+                                    { @op.od_purchase_price}
+                                }
+
+                            </td>
+                            <td class="center">
+                                @Math.Abs(Convert.ToInt32(op.ORDER_QUANTITY))
+                            </td>
+                            <td class="center">
+
+                                @{
+
+                                    if (op.Order.order_type == "Purchase")
+                                    {
+                                        total += (op.od_purchase_price * Math.Abs(Convert.ToInt32(op.ORDER_QUANTITY)));
+                                        @(op.od_purchase_price * Math.Abs(Convert.ToInt32(op.ORDER_QUANTITY)))
+                                    }
+                                    else
+                                    {
+                                        total += (op.Od_Sale_Price * Math.Abs(Convert.ToInt32(op.ORDER_QUANTITY)));
+                                        @(op.Od_Sale_Price * Math.Abs(Convert.ToInt32(op.ORDER_QUANTITY))) }
+                                }
+
+                            </td>
+                        </tr>
+
+                    }
+
+
+
+                    <tr class="total">
+                        <td></td>
+                        <td></td>
+                        <td class="center">Total:</td>
+
+                        <td class="center">
+                            @total
+                        </td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </center>
+    </div>
+    <button style="margin-top:20px" class="btn btn-primary btn-block" onclick="return PrintFunction();">Print Now</button>
+    <script type="text/javascript">
+        function PrintFunction() {
+            var print = document.getElementById('printArea');
+            var printWindow = window.open('', '', 'height=400,width=500');
+            printWindow.document.write('<html><head><title>Order Invoice</title>');
+            
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(print.innerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            setTimeout(function () {
+                printWindow.print();
+            }, 500);
+            return false;
+        }
+    </script>
+</body>
+</html>

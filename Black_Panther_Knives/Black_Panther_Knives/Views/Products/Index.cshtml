@@ -1,0 +1,112 @@
+﻿@model IEnumerable<Black_Panther_Knives.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_Category.Sub_category_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_discription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_Purchase_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_Sale_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_PIc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_pic2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_pic3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_pic4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product_pic5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsTopRated)
+        </th> 
+        <th>
+            @Html.DisplayNameFor(model => model.isbestsell)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Sub_Category.Sub_category_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Product_Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.product_discription)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Product_Purchase_price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Product_Sale_Price)
+    </td>
+    <td>
+        <img src="@Url.Content(item.Product_PIc)" width="100" height="100" />
+    </td>
+    <td>
+        <img src="@Url.Content(item.Product_pic2)" width="100" height="100" />
+    </td>
+    <td>
+        <img src="@Url.Content(item.Product_pic3)" width="100" height="100" />
+    </td>
+    <td>
+        <img src="@Url.Content(item.Product_pic4)" width="100" height="100" />
+    </td>
+    <td>
+        <img src="@Url.Content(item.Product_pic5)" width="100" height="100" />
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Discount)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsTopRated)
+
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.isbestsell)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Product_id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Product_id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Product_id })
+    </td>
+</tr>
+}
+
+</table>

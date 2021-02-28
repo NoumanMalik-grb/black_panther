@@ -1,0 +1,248 @@
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.dll.config
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.pdb
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.exe
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.exe.config
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.rsp
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.exe
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.exe.config
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.rsp
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.AppContext.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Collections.Immutable.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Console.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Globalization.Calendars.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.Compression.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.FileSystem.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Net.Http.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Net.Sockets.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Reflection.Metadata.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.ValueTuple.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XPath.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.exe
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.exe.config
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.rsp
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\VBCSCompiler.exe
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\VBCSCompiler.exe.config
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Antlr3.Runtime.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.Web.Infrastructure.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Newtonsoft.Json.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Helpers.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Mvc.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Optimization.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Razor.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Deployment.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Razor.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\WebGrease.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Helpers.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Mvc.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Optimization.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Razor.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Deployment.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Razor.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Newtonsoft.Json.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Antlr3.Runtime.pdb
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csproj.CopyComplete
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.pdb
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.SqlServer.dll
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.SqlServer.xml
+E:\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.dll.config
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.pdb
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.exe
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.exe
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.exe.config
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.AppContext.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Console.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Net.Http.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Net.Sockets.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\WebGrease.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csproj.CopyComplete
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.dll
+C:\Users\user\Desktop\ahsan\Black_Panther\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.pdb
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.dll.config
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Black_Panther_Knives.pdb
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.exe
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.exe
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.exe.config
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.AppContext.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Console.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Net.Http.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Net.Sockets.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\WebGrease.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csprojAssemblyReference.cache
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.csproj.CopyComplete
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.dll
+C:\Users\user\Desktop\black panteher\Black_Panther_Knives\Black_Panther_Knives\obj\Debug\Black_Panther_Knives.pdb

@@ -1,0 +1,228 @@
+﻿@using Black_Panther_Knives.Models
+@{
+    Model2 db = new Model2();
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    
+        <head>
+            <style>
+                .lineblock{
+                    display:inline-block;
+                }
+                ul li ul {
+                    display: none; /* Hide the nested list first */
+                }
+
+                ul li:hover ul {
+                    display: block; /* Show the list when class 'active' is added to the li */
+                    color: White;
+                    margin: 10px;
+                }
+            </style>
+        </head>
+        <div id="upd">
+            <section class="page-title" style="background-image:url(../../Content/image/IMG-20210225-WA0160.jpg)">
+                <div class="auto-container">
+                    <h2> OUR STORE</h2>
+                    <ul class="page-breadcrumb">
+                        <li> <a href="@Url.Action("index","Home")"> home</a> </li>
+                        <li> Shop</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- End Page Title-- >
+    <!-- Sidebar Page Container -->
+            <div class="sidebar-page-container">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <!-- Sidebar Side -->
+                        <div class="sidebar-side shop-sidebar col-lg-4 col-md-12 col-sm-12">
+                            <aside class="sidebar sticky-top">
+                                <div class="sidebar-inner padding-right">
+
+                                    <div class="row clearfix">
+                                        <!-- Category Widget -->
+                                        <div class="sidebar-widget category-widget col-lg-12 col-md-6 col-sm-12">
+                                            <!-- Sidebar Title -->
+                                            <div class="sidebar-title">
+                                                <h5> CATEGORIES</h5>
+                                            </div>
+
+                                            <div class="widget-content">
+                                                <ul class="shop-cat">
+                                                    <li>
+                                                        <a href="#">
+
+                                                            All Products <span>@db.Products.Count() </span>
+                                                        </a>
+                                                    </li>
+
+                                                    @foreach (var item in db.Categories)
+                                                    {
+                                                <li>
+                                                    <div class="lineblock">
+                                                        @Ajax.ActionLink(item.Category_Name, "Catfilter", "Cart", new { id = item.category_id }, new AjaxOptions
+                                                         {
+                                                             UpdateTargetId = "upd",
+                                                             InsertionMode = InsertionMode.Replace,
+                                                             LoadingElementId="load",
+                                                         })
+                                                    </div>
+
+
+                                                    <i class="fa fa-arrow-down " style="font-size:15px"></i>
+
+                                                    <img src="~/Content/Customer/25.gif" id="load" style="display:none"/>
+
+
+                                                    <ul>
+                                                        @foreach (var subcat in db.Sub_Category.Where(x => x.category_fid == item.category_id))
+                                                        {
+                                                            <li>
+                                                                @Ajax.ActionLink(subcat.Sub_category_name, "SubCatfilter", "Cart", new { id = subcat.sub_category_id }, new AjaxOptions
+                                                                {
+                                                                    UpdateTargetId = "upd",
+                                                                    InsertionMode = InsertionMode.Replace,
+                                                                    LoadingElementId="load",
+                                                                })
+
+                                                            </li>
+                                                        }
+
+                                                    </ul>
+                                                </li>
+                                                    }
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <!-- Price Filters -->
+                                        <div class="sidebar-widget price-filters rangeslider-widget col-lg-12 col-md-6 col-sm-12">
+                                            <!-- Sidebar Title -->
+                                            <div class="sidebar-title">
+                                                <h5> FILTER BY PRICE</h5>
+                                            </div>
+                                            <div class="range-slider-one clearfix">
+                                                <div class="price-range-slider"> </div>
+                                                <div class="clearfix">
+                                                    <div class="pull-left">
+                                                        <a href="#" class="theme-btn btn-style-one"> <span class="txt"> Filtter</span> </a>
+                                                    </div>
+                                                    <div class="pull-right">
+                                                        <div class="title"> Price:</div>
+                                                        <div class="input"> <input type="text" class="property-amount1" name="field-name1" readonly> </div>
+                                                        <div class="input"> <input type="text" class="property-amount" name="field-name" readonly> </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Related Posts -->
+
+
+                                    </div>
+
+                                </div>
+                            </aside>
+                        </div>
+                        <!-- Content Side -->
+                        <div class="content-side shop-products col-lg-8 col-md-12 col-sm-12">
+                            <!-- Shop Single -->
+                            <div class="shop-section">
+                                <!-- Sort By -->
+                                <div class="items-sorting">
+                                    <div class="total-items"> Showing <span> 1-6 of 26</span> </div>
+                                </div>
+
+                                <div class="row clearfix">
+                                    @foreach (var item in db.Products)
+                                    {
+                                        if (TempData["SubCatid"] == null)
+                                        {
+                                            if (TempData["Catid"] == null || item.Sub_Category.category_fid == (int)TempData["Catid"])
+                                            {
+                                        <div class="shop-item col-lg-6 col-md-6 col-sm-12">
+                                            <div class="inner-box">
+                                                <div class="image">
+                                                    <a class="overlay-link" href="@Url.Action("Product_Detail", "Home", new { id = item.Product_id })"> </a>
+                                                    <img src="@Url.Content(item.Product_PIc)" style="width:100%;height:250px" alt="" />
+                                                    <div class="overlay-box">
+                                                        <ul class="cart-option">
+                                                            <li> <a href="@Url.Action("Product_Detail", "Home", new { id = item.Product_id })"> <span> <img src="~/content/customer/images/icons/right-arrow.svg" alt="" /> </span> </a> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="lower-content">
+                                                    <h3> <a href="@Url.Action("Product_Detail", "Home", new { id = item.Product_id })">@item.Product_Name </a> </h3>
+                                                    <div class="clearfix">
+                                                        <div class="pull-left">
+                                                            <div class="price">@item.Product_Sale_Price </div>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <!-- Rating -->
+                                                            <a href="@Url.Action("addtocart", "cart", new { id = item.Product_id })" class="cart"> <span class="icon flaticon-shopping-cart-3"> </span> </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                            }
+                                        }
+                                        else if(item.Sub_cat_Fid==(int)TempData["SubCatid"])
+                                        {
+                                <div class="shop-item col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <a class="overlay-link" href="@Url.Action("Product_Detail", "Home", new { id = item.Product_id })"> </a>
+                                            <img src="@Url.Content(item.Product_PIc)" style="width:100%;height:250px" alt="" />
+                                            <div class="overlay-box">
+                                                <ul class="cart-option">
+                                                    <li> <a href="@Url.Action("Product_Detail", "Home", new { id = item.Product_id })"> <span> <img src="~/content/customer/images/icons/right-arrow.svg" alt="" /> </span> </a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3> <a href="@Url.Action("Product_Detail", "Home", new { id = item.Product_id })">@item.Product_Name </a> </h3>
+                                            <div class="clearfix">
+                                                <div class="pull-left">
+                                                    <div class="price">@item.Product_Sale_Price </div>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <!-- Rating -->
+                                                    <a href="@Url.Action("addtocart", "cart", new { id = item.Product_id })" class="cart"> <span class="icon flaticon-shopping-cart-3"> </span> </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                        }
+
+                                    }
+                                    <!-- Shop Item -->
+                                </div>
+                                <!-- Lower Text -->
+                                <div class="lower-text text-center">
+                                    <a href="#" class="products"> MORE PRODUCTS</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+            <script>
+
+
+
+                // JavaScript
+                jQuery("li:has(ul)").click(function () { // When a li that has a ul is clicked ...
+                    jQuery(this).toggleClass('active'); // then toggle (add/remove) the class 'active' on it.
+                });
+            </script>
+        </div>

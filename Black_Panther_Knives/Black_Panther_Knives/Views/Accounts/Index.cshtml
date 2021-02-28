@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Black_Panther_Knives.Models.Account>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Account_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Acount_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Acount_Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Acount_Pic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Acount_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Acount_Password)
+        </td>
+        <td>
+           <img src="@Url.Content(item.Acount_Pic)" width="100" height="100" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Account_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Account_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Account_id })
+        </td>
+    </tr>
+}
+
+</table>
